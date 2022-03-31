@@ -1,5 +1,11 @@
 <div class="dashboard">
-    <app-menu></app-menu>
+    <section class="menu">
+        <a class="menu-item" [ngClass]="{'active': menu.about}" ngClass="" (click)="goTo('about')"> <i class="fas fa-user"></i> About</a>
+        <a class="menu-item" [ngClass]="{'active': menu.skills}" (click)="goTo('skills')"> <i class="fas fa-feather-alt"></i> Skills</a>
+        <a class="menu-item" [ngClass]="{'active': menu.resume}" (click)="goTo('resume')"> <i class="fas fa-list-alt"></i> Resume</a>
+        <a class="menu-item" [ngClass]="{'active': menu.works}" (click)="goTo('works')"> <i class="fas fa-tasks"></i> Works</a>
+    </section>
+
     <app-profile></app-profile>
 
 
