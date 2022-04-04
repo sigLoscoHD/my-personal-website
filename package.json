@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "author": "Matteo Cappella",
   "license": "ISC",
+  "engines": {
+    "node": "16.14.0",
+    "npm": "8.3.1"
+  },
   "scripts": {
     "ng": "ng",
     "test": "ng test",
