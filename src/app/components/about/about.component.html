@@ -1,23 +1,21 @@
 <section class="asset split about" id="about-section">
-    <p class="title section-item"><span>About</span> me</p>
+    <p class="title section-item" [innerHtml]="'about.title' | translate"></p>
     <div class="asset-body">
         <div class="section-item">
-            <p>Buona padronanza di vari linguaggi come Python, Javascript, Java, HTML5, CSS, NodeJS e PHP.
-                Buone capacità nella gestione di database relazionali grazie alla conoscenza del linguaggio SQL
-                e buona conoscenza del database non relazionale MongoDB.</p>
+            <p>{{ 'about.description' | translate }}</p>
         </div>
         <div class="section-item">
             <div class="item">
-                <label>Age <span>.....</span></label>
-                <p class="value">29</p>
+                <label [innerHtml]="'about.age' | translate"></label>
+                <p class="value">{{ getAge() }}</p>
             </div>
             <div class="item">
-                <label>Country <span>.....</span></label>
-                <p class="value">Italy</p>
+                <label [innerHtml]="'about.country' | translate"></label>
+                <p class="value">{{ 'about.italy' | translate }}</p>
             </div>
             <div class="item">
-                <label>Remote <span>.....</span></label>
-                <p class="value">Available</p>
+                <label [innerHtml]="'about.remote' | translate"></label>
+                <p class="value">{{ 'about.available' | translate }}</p>
             </div>
         </div>
     </div>

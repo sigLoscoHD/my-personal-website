@@ -1,9 +1,9 @@
 <div class="dashboard">
     <section class="menu">
-        <a class="menu-item" [ngClass]="{'active': menu.about}" ngClass="" (click)="goTo('about')"> <i class="fas fa-user"></i> About</a>
-        <a class="menu-item" [ngClass]="{'active': menu.skills}" (click)="goTo('skills')"> <i class="fas fa-feather-alt"></i> Skills</a>
-        <a class="menu-item" [ngClass]="{'active': menu.resume}" (click)="goTo('resume')"> <i class="fas fa-list-alt"></i> Resume</a>
-        <a class="menu-item" [ngClass]="{'active': menu.works}" (click)="goTo('works')"> <i class="fas fa-tasks"></i> Works</a>
+        <a class="menu-item" [ngClass]="{'active': menu.about}" ngClass="" (click)="goTo('about')"> <i class="fas fa-user"></i> {{ 'menu.about' | translate }}</a>
+        <a class="menu-item" [ngClass]="{'active': menu.skills}" (click)="goTo('skills')"> <i class="fas fa-feather-alt"></i> {{ 'menu.skills' | translate }}</a>
+        <a class="menu-item" [ngClass]="{'active': menu.resume}" (click)="goTo('resume')"> <i class="fas fa-list-alt"></i> {{ 'menu.resume' | translate }}</a>
+        <a class="menu-item" [ngClass]="{'active': menu.works}" (click)="goTo('works')"> <i class="fas fa-tasks"></i> {{ 'menu.works' | translate }}</a>
     </section>
 
     <app-profile></app-profile>

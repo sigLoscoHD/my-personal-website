@@ -1,13 +1,13 @@
 <section class="asset" id="works-section">
-    <p class="title section-item"><span>Recent</span> Projects</p>
+    <p class="title section-item" [innerHtml]="'works.title' | translate"></p>
     <div class="asset-body grid">
 
         <div class="work-item">
             <div class="img-content">
                 <img src="../../../assets/img/proj1.jpg" alt="project image">
-                <a href="https://antica-osteria-del-borgo.herokuapp.com/" class="more-overlay">More Info...</a>
+                <a href="https://antica-osteria-del-borgo.herokuapp.com/" class="more-overlay">{{ 'works.moreInfo' | translate }}</a>
             </div>
-            <p class="project-name">Restaurant WebApp</p>
+            <p class="project-name">{{ 'works.project.restaurant' | translate }}</p>
         </div>
     </div>
 </section>

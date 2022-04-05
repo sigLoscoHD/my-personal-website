@@ -1,82 +1,64 @@
 <section class="asset split" id="resume-section">
-    <p class="title section-item"><span>R</span>esume</p>
+    <p class="title section-item" [innerHtml]="'resume.title' | translate"></p>
     <div class="asset-body">
 
         <div class="section-item">
-            <p class="title">EXPERIENCE</p>
+            <p class="title">{{ 'resume.experience.title' | translate }}</p>
             <div class="section-sub-item">
-                <p class="time current">2020 - Now</p>
-                <p class="item-name">Software Engineer</p>
-                <p class="additional-info">Leithà | Unipol Group</p>
-                <p class="description">Sviluppo di applicazioni web attraverso l’utilizzo di differenti
-                    tecnologie: Angular, React, NodeJS. Gestione della Continuous Integration e delivery.</p>
+                <p class="time current">{{ 'resume.experience.leitha.date' | translate }}</p>
+                <p class="item-name">{{ 'resume.experience.leitha.name' | translate }}</p>
+                <p class="additional-info">{{ 'resume.experience.leitha.additionalInfo' | translate }}</p>
+                <p class="description">{{ 'resume.experience.leitha.description' | translate }}</p>
             </div>
+
             <div class="section-sub-item">
-                <p class="time">2019- 2020</p>
-                <p class="item-name">Team lead dello sviluppo software,</p>
-                <p class="additional-info">Gruppo Euris</p>
-                <p class="description">Gestione tecnica e organizzativa di un team di 3/4 persone. Fra le varie
-                    mansioni di cui mi occupo attualmente, ritengo doveroso citare: comunicazione con il cliente, decisioni tecniche/architetturali durante le fasi dello sviluppo, analisi dei requisiti,
-                    realizzazione di stime in giornate uomo da presentare al cliente, pianificazione e divisione delle attività fra i vari componenti del team, pianificazione e approvazione delle giornate di ferie,
-                    comunicazione delle giornate di lavoro erogate dal team al cliente.
-                </p>
+                <p class="time current">{{ 'resume.experience.eurisLead.date' | translate }}</p>
+                <p class="item-name">{{ 'resume.experience.eurisLead.name' | translate }}</p>
+                <p class="additional-info">{{ 'resume.experience.eurisLead.additionalInfo' | translate }}</p>
+                <p class="description">{{ 'resume.experience.eurisLead.description' | translate }}</p>
             </div>
+
             <div class="section-sub-item">
-                <p class="time">2018 - 2019</p>
-                <p class="item-name">Software Engineer</p>
-                <p class="additional-info">Gruppo Euris</p>
-                <p class="description">Sviluppo di applicazioni web, mobile e assistenza tecnica per un importante
-                    cliente nell’ambito del Fashion. In questo periodo ho avuto modo di conoscere
-                    e migliorare diversi aspetti che cercherò di sintetizzare nei punti che seguono: comunicazione con il cliente, gestione di un cliente molto esigente, metodologia di sviluppo TDD (Test-Driven Development), 
-                    sviluppo back-end e front-end.
-                </p>
+                <p class="time current">{{ 'resume.experience.eurisDev.date' | translate }}</p>
+                <p class="item-name">{{ 'resume.experience.eurisDev.name' | translate }}</p>
+                <p class="additional-info">{{ 'resume.experience.eurisDev.additionalInfo' | translate }}</p>
+                <p class="description">{{ 'resume.experience.eurisDev.description' | translate }}</p>
             </div>
+
             <div class="section-sub-item">
-                <p class="time">2016 - 2019</p>
-                <p class="item-name">Co-founder and developer</p>
-                <p class="additional-info">Freecopia SRL</p>
-                <p class="description">Startup fondata insieme ad altri 7 ragazzi che studiavano presso l’Università
-                    di Bologna. L’obiettivo che ci siamo posti è quello di ridurre i costi delle
-                    stampe tramite la pubblicità. Tutto ciò tramite l’inserimento di un banner
-                    pubblicitario nella parte superiore della stampa di ogni documento caricato ed
-                    inviato in stampa attraverso la nostra piattaforma. Nello specifico, mi sono
-                    concentrato nello sviluppo del backend dell’applicazione attraverso l’utilizzo
-                    delle seguenti tecnologie: NodeJs, ExpressJs, MongoDB.
-                </p>
+                <p class="time current">{{ 'resume.experience.freecopia.date' | translate }}</p>
+                <p class="item-name">{{ 'resume.experience.freecopia.name' | translate }}</p>
+                <p class="additional-info">{{ 'resume.experience.freecopia.additionalInfo' | translate }}</p>
+                <p class="description">{{ 'resume.experience.freecopia.description' | translate }}</p>
             </div>
+
             <div class="section-sub-item">
-                <p class="time">2015 (March-September)</p>
-                <p class="item-name">Developer</p>
-                <p class="additional-info">Next Generation Bioninformatics srl</p>
-                <p class="description">Tirocinio svolto ai fini della tesi triennale presso quest’azienda spin-off
-                    dell’Università di Camerino. In questa esperienza, oltre alla realizzazione della
-                    tesi, ho ampliato le mie conoscenze nell’ambito dello sviluppo web. In modo
-                    particolare mi sono focalizzato nello sviluppo back-end attraverso l’utilizzo di
-                    NodeJS (framework ExpressJs) e nella gestione di database non relazionali
-                    sfruttando MongoDB.
-                </p>
+                <p class="time current">{{ 'resume.experience.stage.date' | translate }}</p>
+                <p class="item-name">{{ 'resume.experience.stage.name' | translate }}</p>
+                <p class="additional-info">{{ 'resume.experience.stage.additionalInfo' | translate }}</p>
+                <p class="description">{{ 'resume.experience.stage.description' | translate }}</p>
             </div>
         </div>
 
         <div class="section-item">
-            <p class="title">EDUCATION</p>
+            <p class="title">{{ 'resume.education.title' | translate }}</p>
             <div class="section-sub-item">
-                <p class="time">2015 - 2017</p>
-                <p class="item-name">Laurea magistrale in Informatica</p>
-                <p class="additional-info">Università di Bologna, Bologna</p>
-                <p class="description">Votazione 110/110 e lode.</p>
+                <p class="time">{{ 'resume.education.masterDegree.date' | translate }}</p>
+                <p class="item-name">{{ 'resume.education.masterDegree.name' | translate }}</p>
+                <p class="additional-info">{{ 'resume.education.masterDegree.additionalInfo' | translate }}</p>
+                <p class="description">{{ 'resume.education.masterDegree.description' | translate }}</p>
             </div>
             <div class="section-sub-item">
-                <p class="time">2012 - 2015</p>
-                <p class="item-name">Laurea triennale in Informatica industriale</p>
-                <p class="additional-info">Università di Camerino, Ascoli Piceno</p>
-                <p class="description">Votazione 106/110</p>
+                <p class="time">{{ 'resume.education.degree.date' | translate }}</p>
+                <p class="item-name">{{ 'resume.education.degree.name' | translate }}</p>
+                <p class="additional-info">{{ 'resume.education.degree.additionalInfo' | translate }}</p>
+                <p class="description">{{ 'resume.education.degree.description' | translate }}</p>
             </div>
             <div class="section-sub-item">
-                <p class="time">2008 - 2012</p>
-                <p class="item-name">Diploma perito–programmatore</p>
-                <p class="additional-info">Istituto Tecnico Commerciale A. Capriotti, San Benedetto del Tronto (AP)</p>
-                <p class="description">Votazione 89/100</p>
+                <p class="time">{{ 'resume.education.highSchool.date' | translate }}</p>
+                <p class="item-name">{{ 'resume.education.highSchool.name' | translate }}</p>
+                <p class="additional-info">{{ 'resume.education.highSchool.additionalInfo' | translate }}</p>
+                <p class="description">{{ 'resume.education.highSchool.description' | translate }}</p>
             </div>
         </div>
     </div>
